@@ -1,0 +1,17 @@
+auto = ["BMW", "MB", "LADA", "KIA", "HONDA"]
+statement = ['Я езжу на автомабиле данной марки ']
+for i in auto:
+    print(i)
+
+for i in range(len(auto)):
+    auto[i] += " Я езжу на автомабиле данной марки "
+    print(auto)
+
+for i in auto:
+    print(i)
+
+print()
+cars_count = (0)
+for i in range(10):
+    cars_count += 10
+    print(cars_count)
