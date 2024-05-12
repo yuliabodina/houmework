@@ -1,1 +1,46 @@
+#Функция с параметрами по умолчанию:
+def print_params(a = 1, b = 'строка', c = True):
+    print(a, b, c)
+print_params()
+print_params(1)
+print_params(2)
+print_params(3)
+print_params(4)
+print()
+def print_params(a, b = 25, c = None):
+    if c is None:
+        c = [1,2,3]
+        c.append(a)
+    print(c)
+print_params (1)
+print_params (2)
+print_params (3)
+print_params (4)
 
+print()
+def print_params(a=1, b = 25, c = [1,2,3]):
+
+    print(a, b, c)
+print_params ()
+print_params ()
+print_params ()
+print_params ()
+
+#Распаковка параметров:
+def print_params(a, b , c):
+    print(a, b, c)
+values_list = [1, "строка", True]
+print_params(*values_list)
+
+def print_params(a, b , c):
+    print(a, b, c)
+
+values_dict = { 'a': 1, 'b': "строка", 'c':True}
+print_params(**values_dict)
+
+#Распаковка + отдельные параметры:
+def print_params(a, b) :
+    print(a, b)
+values_list_2 = [1, "строка"]
+print_params(*values_list_2, 42)
+#  print_params(*values_list_2, 42) - не раюотает
